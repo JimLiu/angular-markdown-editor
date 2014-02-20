@@ -1,0 +1,37 @@
+{
+  "name": "Angular-Markdown-Editor",
+  "version": "0.1.0",
+  "homepage": "https://github.com/JimLiu/angular-markdown-editor",
+  "authors": [
+    "Jim Liu <junminliu@gmail.com>"
+  ],
+  "description": "Markdown editor with Angularjs",
+  "main": "demo/dist/angular-markdown-editor.js",
+  "keywords": [
+    "angular",
+    "markdown",
+    "editor",
+    "bbcode"
+  ],
+  "dependencies": {
+    "angular": ">= 1.2.0",
+    "showdown": "~0.3.1",
+    "codemirror": "~3.21.0"
+  },
+  "devDependencies": {
+    "angular": "~1.2.13",
+    "bootstrap": "~3.1.0",
+    "jquery": "*",
+    "jasmine-jquery": "~1.0.0",
+    "angular-mocks": "~1.2.13",
+    "angular-resource": "~1.2.13"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ]
+}

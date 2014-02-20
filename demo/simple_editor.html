@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="demoApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS Markdown Editor demo</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="bower_components/codemirror/lib/codemirror.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/angular-markdown-editor.css">
+</head>
+
+<body ng-controller="SimpleEditorCtrl">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 col-xs-12">
+          <textarea ui-markdown-editor="editorOptions" ng-model="markdownData"></textarea>
+        </div>
+        <div class="col-md-6 col-xs-12">
+          <div ng-bind-markdown="markdownData">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="bower_components/mousetrap/mousetrap.min.js"></script>
+    <script src="bower_components/showdown/compressed/showdown.js"></script>
+    <script type="text/javascript" src="bower_components/codemirror/lib/codemirror.js"></script>
+    <script type="text/javascript" src="bower_components/codemirror/addon/mode/overlay.js"></script>
+    <script type="text/javascript" src="bower_components/codemirror/mode/gfm/gfm.js"></script>
+    <script type="text/javascript" src="bower_components/codemirror/mode/markdown/markdown.js"></script>
+    <script src="bower_components/showdown/compressed/extensions/github.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+    <script type="text/javascript" src="dist/angular-markdown-editor.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
